@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow | To-Do List</title>
+    <meta
+      name="description"
+      content="TaskFlow is a clean, responsive to-do list app built with HTML, CSS, and vanilla JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <p class="brand">TaskFlow</p>
+        <p class="tagline">Organize your day. Get things done.</p>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="todo-app" aria-label="TaskFlow to-do application">
+        <h1>My Tasks</h1>
+
+        <form id="taskForm" class="task-form" novalidate>
+          <label class="sr-only" for="taskInput">Add a task</label>
+          <input
+            id="taskInput"
+            type="text"
+            placeholder="What needs to be done?"
+            aria-label="What needs to be done"
+            autocomplete="off"
+          />
+          <button id="addTaskBtn" type="submit" class="primary-btn">+ Add Task</button>
+        </form>
+
+        <p id="validationMessage" class="validation-message" aria-live="polite"></p>
+
+        <div class="task-summary">
+          <span id="taskCounter">0 tasks remaining</span>
+        </div>
+
+        <ul id="taskList" class="task-list" aria-live="polite" aria-label="Task list"></ul>
+
+        <div id="emptyState" class="empty-state" aria-live="polite">
+          No tasks yet. Add one to get started!
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Organize. Focus. Accomplish.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
