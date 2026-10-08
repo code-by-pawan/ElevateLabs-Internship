@@ -1,0 +1,22 @@
+{
+  "name": "book-management-api",
+  "version": "1.0.0",
+  "description": "Book Management REST API using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests configured yet\""
+  },
+  "keywords": [
+    "rest-api",
+    "express",
+    "books",
+    "crud"
+  ],
+  "author": "Pawan Sain",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
